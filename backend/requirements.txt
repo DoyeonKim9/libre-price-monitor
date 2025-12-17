@@ -1,0 +1,30 @@
+# -----------------------
+# Backend (API 서버)
+# -----------------------
+fastapi
+uvicorn[standard]
+
+# -----------------------
+# Database
+# -----------------------
+pymysql
+python-dotenv
+
+# -----------------------
+# Crawling / HTTP
+# -----------------------
+requests
+beautifulsoup4
+lxml          # HTML 파싱 성능 개선 (BeautifulSoup과 함께 사용)
+
+# -----------------------
+# Time / Scheduling (옵션)
+# -----------------------
+python-dateutil
+
+# -----------------------
+# 기타 (필요시 사용)
+# -----------------------
+# sqlalchemy         # ORM을 쓰고 싶을 경우
+# aiohttp            # 비동기 크롤링 필요할 때
+# playwright         # 동적 페이지 크롤링 필요할 때
