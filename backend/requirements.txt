@@ -1,30 +1,5 @@
-# -----------------------
-# Backend (API 서버)
-# -----------------------
-fastapi
-uvicorn[standard]
-
-# -----------------------
-# Database
-# -----------------------
-pymysql
-python-dotenv
-
-# -----------------------
-# Crawling / HTTP
-# -----------------------
-requests
-beautifulsoup4
-lxml          # HTML 파싱 성능 개선 (BeautifulSoup과 함께 사용)
-
-# -----------------------
-# Time / Scheduling (옵션)
-# -----------------------
-python-dateutil
-
-# -----------------------
-# 기타 (필요시 사용)
-# -----------------------
-# sqlalchemy         # ORM을 쓰고 싶을 경우
-# aiohttp            # 비동기 크롤링 필요할 때
-# playwright         # 동적 페이지 크롤링 필요할 때
+requests>=2.31.0
+pandas>=2.1.0
+openpyxl>=3.1.2
+pillow>=10.0.0      # 엑셀에 이미지 삽입 시 openpyxl이 필요로 함
+playwright>=1.42.0  # 카드 HTML 렌더링/스크린샷
